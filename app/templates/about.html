@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %}Wellenfarbe{% endblock %}
+
+{% block body %}
+{% include 'partials/header.html' %}
+
+<div class="container mx-auto p-6 max-w-5xl">
+    <div title="wellenfarbe">
+        <h1 class="text-3xl px-2">Meine Geschichte und was ich heute mache</h1><br/>
+        <p class="text-xl p-2">Hallo, mein Name ist Petra!</p>
+        <img
+                src="static/images/petra.png"
+                alt="Petra Bartmann"
+                class="rounded-lg w-full md:w-96 h-auto"
+        />
+        <p class="text-xl p-2">
+            Ich war 17 Jahre alt, als ein Kommentar meines damaligen Partners dazu
+            führte, dass ich begann, meinen Körper als nicht ausreichend schön
+            wahrzunehmen. <br/><br/>Ich entwickelte sehr schnell eine Essstörung,
+            gedanklich drehte sich in meinem Leben alles nur noch ums Kalorienzählen,
+            Körpermaße, mein Aussehen und den Vergleich mit anderen, Diäten,
+            Selbstkasteiung und darum, wie ich all das wieder hinter mir lassen könnte. <br
+        /><br/>Vor allem durch Bücher anderer ehemals Betroffener konnte ich Mut
+            fassen und meinen eigenen Weg raus aus dem, was ich wirklich als die Hölle
+            auf Erden empfand, finden. Ich lernte langsam aber stetig, meinem Körper
+            wieder zu vertrauen und auf seine Bedürfnisse und Signale zu achten. Bald
+            konnte ich viele der mir selbst auferlegten Verbote hinter mir lassen und
+            beginnen, mich wieder auf das Leben einzulassen, das mich außerhalb meiner
+            Essstörung erwartete. <br/><br/>Ich fand zu Selbstakzeptanz und -liebe und
+            ich helfe heute anderen Menschen dabei, auch wieder aus aus der Qual und
+            rein in ein selbstbestimmtes Leben zu finden.
+        </p>
+    </div>
+</div>
+
+{% include 'partials/footer.html' %}
+{% endblock %}

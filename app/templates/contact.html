@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}Wellenfarbe{% endblock %}
+
+{% block body %}
+{% include 'partials/header.html' %}
+
+<div class="relative min-h-screen flex flex-col justify-between bg-cover bg-fixed" style="background-image: url('/static/images/contact_background.webp'); background-size: cover; background-position: center;">
+    <div class="container mx-auto flex flex-col justify-center text-center">
+        <div class="xl:h-[20vh] h-[40vh] flex-shrink-0"></div>
+        <div class="relative bg-gradient-to-r from-[#2B363F]/20 via-green-500/20 to-[#38C796]/20 text-white font-sans text-xl max-w-3xl mx-auto p-12 rounded-lg mb-12 shadow-2xl backdrop-filter backdrop-blur-lg">
+            <p class="text-2xl mb-6">Ich freue mich darauf, von dir zu hören!</p>
+            <div class="space-y-6">
+                <div class="mb-4">
+                    <p class="mt-2">Petra Bartmann</p>
+                </div>
+                <div class="mb-4">
+                    <p class="mt-2">
+                        <a href="mailto:petra@wellenfarbe.at" class="hover:underline">
+                            petra@wellenfarbe.at
+                        </a>
+                    </p>
+                </div>
+                <div class="mb-4">
+                    <p class="mt-2">Nordmanngasse 23, 1210 Wien</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include 'partials/footer.html' %}
+{% endblock %}

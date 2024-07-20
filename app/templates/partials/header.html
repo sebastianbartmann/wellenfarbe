@@ -1,0 +1,83 @@
+<header class="{{header_class}}">
+    <div class="container mx-auto px-4 lg:px-0">
+        <div class="flex lg:justify-center justify-center items-center py-4">
+
+            <a href="/#" class="flex px-2 items-center">
+                <img src="static/images/wellenfarbe_logo.webp" alt="Your Logo" class="h-20 w-auto"/>
+            </a>
+
+            <!-- Menu -->
+            <nav class="hidden {{text_color_class}} p-4 px-6 rounded text-2xl lg:flex space-x-12 text-black">
+                <a href="/#about" class="hover:text-verde hover:text-black">
+                    Über mich
+                </a>
+                <a href="/#method" class="hover:text-verde hover:text-black">Methode</a>
+                <a href="/contact" class="hover:text-verde hover:text-black">
+                    Kontakt
+                </a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="burger"
+                    class="lg:hidden flex items-center p-2 text-aqua">
+                <svg
+                        width="50"
+                        height="50"
+                        viewBox="0 0 24 24"
+                        class="text-gray-700 border-4 rounded-xl bg-white">
+                    <path
+                            d="M4 6h16M4 12h16m-7 6h7"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round">
+                    </path>
+                </svg>
+            </button>
+        </div>
+
+        <div id="menu" class="hidden text-right text-2xl bg-white rounded p-6 mx-4 mb-4">
+            <a
+                    href="/"
+                    class="block py-2 px-4 hover:text-verde text-aqua hover:text-black">
+                Startseite
+            </a>
+            <a
+                    href="/#about"
+                    class="block py-2 px-4 hover:text-verde text-aqua hover:text-black">
+                Über mich
+            </a>
+            <a
+                    href="/#method"
+                    class="block py-2 px-4 hover:text-verde text-aqua hover:text-black">
+                Methode
+            </a>
+            <a
+                    href="/contact"
+                    class="block py-2 px-4 hover:text-verde text-aqua hover:text-black">
+                Kontakt
+            </a>
+        </div>
+    </div>
+</header>
+
+<script>
+    document.addEventListener('click', function (event) {
+        const menu = document.getElementById('menu');
+        const burger = document.getElementById('burger');
+
+        if (burger.contains(event.target)) {
+            menu.classList.toggle('hidden');
+        } else if (!menu.contains(event.target)) {
+            menu.classList.add('hidden');
+        }
+    });
+
+
+    document.addEventListener('keydown', function (event) {
+        const menu = document.getElementById('menu');
+        if (event.key === 'Escape' && !menu.classList.contains('hidden')) {
+            menu.classList.add('hidden');
+        }
+    });
+</script>

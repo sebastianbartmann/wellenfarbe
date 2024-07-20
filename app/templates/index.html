@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+
+{% block title %}Wellenfarbe{% endblock %}
+
+{% block body %}
+{% include 'partials/header.html' %}
+<div class="relative min-h-screen flex flex-col justify-between bg-cover bg-fixed"
+     style="background-image: url('/static/images/petra2.webp'); background-size: cover; background-position: right top;">
+    <div class="container mx-auto flex flex-col justify-center text-center">
+        <!-- Initial Section -->
+        <div id="home" class="xl:h-[20vh] h-[60vh] flex-shrink-0"></div>
+        <div class="relative bg-gradient-to-r from-[#2B363F]/20 via-green-500/20 to-[#38C796]/20 text-white font-sans text-xl max-w-2xl mx-auto p-12 rounded-lg mb-12 shadow-2xl backdrop-filter backdrop-blur-lg">
+            <div class="space-y-6">
+                <p class="text-5xl font-serif leading-tight">
+                    Du bist bei mir richtig,<br/>
+                    wenn… <br/>
+                </p>
+                <ul class="text-lg list-disc list-inside space-y-4 pl-4">
+                    <li class="leading-relaxed">das Thema „Essen“ dich belastet.</li>
+                    <li class="leading-relaxed">du das Gefühl hast, deine Gedanken rund um Lebensmittel, Kalorien und Aussehen nicht mehr im
+                        Griff zu haben.
+                    </li>
+                    <li class="leading-relaxed">du Unterstützung durch jemanden suchst, der hinter sich hat, was auch du loslassen
+                        möchtest.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <div id="about"
+             class="relative bg-gradient-to-r from-[#2B363F]/20 via-green-500/20 to-[#38C796]/20 text-white font-sans text-xl max-w-2xl mx-auto p-12 rounded-lg mb-12 shadow-2xl backdrop-filter backdrop-blur-lg">
+            <div class="space-y-6">
+                <h1 class="text-5xl font-serif leading-tight">Meine Geschichte und was ich heute mache</h1>
+                <p class="text-xl p-2">Hallo, mein Name ist Petra!</p>
+                <p class="text-lg leading-relaxed">
+                    Ich war 17 Jahre alt, als ein Kommentar meines damaligen Partners dazu führte, dass ich begann, meinen Körper als nicht
+                    ausreichend schön wahrzunehmen. <br/><br/>
+                    Ich entwickelte sehr schnell eine Essstörung, gedanklich drehte sich in meinem Leben alles nur noch ums Kalorienzählen,
+                    Körpermaße, mein Aussehen und den Vergleich mit anderen, Diäten, Selbstkasteiung und darum, wie ich all das wieder
+                    hinter mir lassen könnte. <br/><br/>
+                    Vor allem durch Bücher anderer ehemals Betroffener konnte ich Mut fassen und meinen eigenen Weg raus aus dem, was ich
+                    wirklich als die Hölle auf Erden empfand, finden. Ich lernte langsam aber stetig, meinem Körper wieder zu vertrauen und
+                    auf seine Bedürfnisse und Signale zu achten. Bald konnte ich viele der mir selbst auferlegten Verbote hinter mir lassen
+                    und beginnen, mich wieder auf das Leben einzulassen, das mich außerhalb meiner Essstörung erwartete. <br/><br/>
+                    Ich fand zu Selbstakzeptanz und -liebe und ich helfe heute anderen Menschen dabei, auch wieder aus aus der Qual und rein
+                    in ein selbstbestimmtes Leben zu finden.
+                </p>
+            </div>
+        </div>
+
+        <!-- Method Section -->
+        <div id="method"
+             class="relative bg-gradient-to-r from-[#2B363F]/20 via-green-500/20 to-[#38C796]/20 text-white font-sans text-xl max-w-2xl mx-auto p-12 rounded-lg mb-12 shadow-2xl backdrop-filter backdrop-blur-lg">
+            <div class="space-y-6">
+                <h1 class="text-5xl font-serif leading-tight">Methode</h1>
+                <p class="text-lg leading-relaxed">
+                    Die Methode, auf der mein Coaching aufbaut, geht auf Byron Katie zurück und nennt sich „The Work“. <br/><br/>
+                    Sie eignet sich super für die Untersuchung der Glaubenssätze, die wir uns sagen, wenn wir im Teufelskreis der Essstörung
+                    stecken, hilft aber auch in allen anderen Lebensbereichen, sobald das, was wir denken, zur Belastung wird. <br/><br/>
+                    Mithilfe von 4 Fragen und den sogenannten „Umkehrungen“ werden Glaubenssätze auf ihren Wahrheitsgehalt überprüft, wird
+                    das eigene Denken hinterfragt. Was simpel klingt und was ich selbst anfangs nicht wirklich ernst nahm, durfte ich sehr
+                    bald als eines der wichtigsten Werkzeuge im Umgang mit allem, was Menschen sich in ihren Gedanken so erzählen,
+                    kennenlernen. <br/><br/>
+                    Ich bin bis heute davon fasziniert, wie nachhaltig „The Work“ wirkt – am besten, man probiert es einfach mal aus, um
+                    sich ein Bild davon zu machen.
+                </p>
+            </div>
+            <a href="/contact"
+               class="inline-block bg-white text-black font-bold mt-8 py-3 px-6 rounded-lg shadow-md hover:bg-gray-200 transition duration-300">
+               Kontaktiere mich hier.
+            </a>
+        </div>
+    </div>
+</div>
+
+{% include 'partials/footer.html' %}
+{% endblock %}
